@@ -4,9 +4,8 @@ FROM php:7.2-apache
 MAINTAINER Damien PIQUET <dpiquet@teicee.com>
 
 # Copy nodejs from node image
-COPY --from=node /usr/local/bin/node /usr/local/bin/node
-COPY --from=node /opt/yarn /opt/yarn
 COPY --from=node /usr/local/lib/node_modules /usr/local/lib/node_modules
+COPY --from=node /opt /opt
 COPY --from=node /usr/local/bin /usr/local/bin
 
 # Custom Vhost
