@@ -1,4 +1,4 @@
-FROM node:9 as node
+FROM node:10 as node
 
 FROM php:7.2-apache
 MAINTAINER Damien PIQUET <dpiquet@teicee.com>
